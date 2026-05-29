@@ -1,0 +1,27 @@
+name: quantum-workshop
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+
+  # core scientific stack
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+
+  # jupyter
+  - jupyterlab
+  - ipykernel
+  - pylatexenc
+  
+  # pip packages (quantum stack)
+  - pip
+  - pip:
+      - qiskit
+      - qiskit-aer
+      - qiskit-ibm-runtime
+      - qiskit-algorithms
+      
